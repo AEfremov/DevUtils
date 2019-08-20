@@ -1,4 +1,4 @@
-package com.ltech.moneyto.core
+package com.
 
 import android.app.Dialog
 import android.content.Context
@@ -6,6 +6,24 @@ import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.appcompat.app.AlertDialog
 
+/**
+ * 
+ * ConfirmDialog
+ *       .newInstance(
+ *           title = null,
+ *           msg = "Message text",
+ *           positive = "Next",
+ *           negative = null,
+ *           tag = TAG_NEED_DOCUMENT)
+ *       .show(supportFragmentManager, TAG_NEED_DOCUMENT)
+ *
+ * Declare ConfirmDialog.OnClickListener
+ *
+ * override fun dialogConfirm(tag: String) {
+ *   when (tag) {
+ *   TAG_NEED_DOCUMENT -> { ... }
+ * 
+ */
 class ConfirmDialog : androidx.fragment.app.DialogFragment() {
   
   private var clickListener: OnClickListener? = null
